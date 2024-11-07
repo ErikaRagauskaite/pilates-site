@@ -1,0 +1,207 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.announcement-bar {
+  background-color: #050259;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1em;
+  font-family: "Bodoni Moda", serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 0px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-family: "Satisfy", cursive;
+  color: #050259;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  font-family: "Bodoni Moda", serif;
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #050259;
+}
+
+nav ul li a:hover {
+  color: #a0a4f2;
+}
+
+.cta {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 25px; /* Increased padding */
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.cta:hover {
+  background-color: #a0a4f2;
+}
+.hero {
+  position: relative;
+  background-image: url("assets/pexels-john-tekeridis-21837-14843543.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -60px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 7em;
+  color: #a0a4f2;
+  text-align: center;
+  padding-top: 200px;
+  font-family: "Satisfy", cursive;
+}
+
+.hero p {
+  font-size: 2em;
+  color: #bbbdf2;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 1px;
+}
+
+.intro {
+  padding: 50px 350px 50px 150px;
+  text-align: left;
+}
+
+.intro p {
+  font-size: 1.4em;
+  color: #050259;
+  font-family: "Bodoni Moda", serif;
+  padding-bottom: 40px;
+}
+
+.cta-secondary {
+  background-color: #a0a4f2;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.why-us h2 {
+  font-size: 3em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  padding: 50px 350px 50px 150px;
+}
+
+.why-us ul li {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.4em;
+  color: #050259;
+  padding: 20px 0;
+}
+
+.classes {
+  padding: 50px 150px;
+  margin: 50px 0;
+}
+
+.classes h2 {
+  font-size: 3em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.class-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.class-card {
+  //background-color: #bbbdf2;
+  // border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 10px;
+  max-width: 500px;
+}
+
+.class-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.class-card h3 {
+  font-family: "Bodoni Moda", serif;
+  color: #050259;
+  margin-top: 10px;
+}
+
+.class-card p {
+  font-family: "Bodoni Moda", serif;
+  color: #333;
+  line-height: 2;
+}
+
+.classes .cta-secondary {
+  display: block;
+  margin: 0 auto;
+}
