@@ -174,11 +174,9 @@ nav ul li a:hover {
 }
 
 .class-card {
-  //background-color: #bbbdf2;
-  // border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
   flex: 1;
   margin: 10px;
   max-width: 500px;
@@ -204,4 +202,580 @@ nav ul li a:hover {
 .classes .cta-secondary {
   display: block;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #050259;
+  color: #a0a4f2;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Bodoni Moda", serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-content .logo {
+  margin: 0;
+  color: #fff;
+}
+
+.footer-content nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.footer-content nav ul li {
+  font-family: "Bodoni Moda", serif;
+  display: inline;
+  color: #fff;
+}
+
+.footer-content nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-content nav ul li a:hover {
+  color: #a0a4f2;
+}
+
+.footer-content i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .header-content {
+    padding: 20px;
+  }
+  nav ul {
+    gap: 20px;
+  }
+  .intro {
+    padding: 50px 100px;
+  }
+
+  .why-us ul {
+    padding: 50px 100px;
+  }
+
+  .classes {
+    padding: 50px 100px;
+  }
+}
+
+/*Classes*/
+
+.classes-hero {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.classes-hero h1 {
+  font-size: 3em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 50px;
+}
+
+.classes-hero p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #050259;
+  font-family: "Bodoni Moda", serif;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.dropbtn {
+  background-color: #050259;
+  color: white;
+  padding: 16px;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Bodoni Moda", serif;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropbtn:hover {
+  background-color: #a0a4f2;
+}
+
+.dropdown {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-width: 600px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.dropdown-content a p {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #a0a4f2;
+}
+
+.cta-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.cta-button {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a0a4f2;
+}
+
+/* Schedule */
+
+.schedule-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.schedule-container h1 {
+  font-size: 3em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 50px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.schedule-table th {
+  background-color: #050259;
+  color: #fff;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.schedule-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.book-button {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #a0a4f2;
+}
+
+.booking-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.booking-container h2 {
+  font-size: 2em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 50px;
+}
+
+.booking-container label {
+  display: block;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.booking-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "Bodoni Moda", serif;
+}
+
+.booking-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  color: #333;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.booking-container select option {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  color: #333;
+  padding: 10px;
+}
+
+.booking-container select:focus {
+  outline: none;
+  border-color: #050259;
+}
+
+.booking-container button {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-container button:hover {
+  background-color: #a0a4f2;
+}
+
+//* Memberships */
+
+.membership-hero {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.membership-hero h1 {
+  font-size: 3em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.membership-hero p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #050259;
+  font-family: "Bodoni Moda", serif;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.membership-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.membership-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  margin: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-height: 600px;
+}
+
+.membership-card h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+  color: #050259;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.membership-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.membership-card ul li {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cta-membership {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.cta-membership:hover {
+  background-color: #a0a4f2;
+}
+
+/*membership form*/
+
+.membership-form-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+
+  text-align: center;
+}
+
+.membership-form-container h1 {
+  font-size: 2.5em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 50px;
+}
+
+.membership-form-container p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.membership-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.membership-form-container label {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.membership-form-container input,
+.membership-form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.membership-form-container input:focus,
+.membership-form-container select:focus {
+  border-color: #050259;
+  outline: none;
+}
+
+#price-info {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta-price {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-price:hover {
+  background-color: #a0a4f2;
+}
+
+/*Contact*/
+
+.contact-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2.5em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 50px;
+}
+
+.contact-container p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.contact-container label {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #050259;
+  outline: none;
+}
+
+.cta-contact {
+  background-color: #050259;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-contact:hover {
+  background-color: #a0a4f2;
 }

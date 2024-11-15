@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="announcement-bar">
+      <p>New to the studio? Enjoy 20% off your first month!</p>
+    </div>
+    <div class="header-content">
+      <div class="logo">Stretch Society</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="cta">Join Now!</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <section>
+      <div class="schedule-container">
+        <h1>Class Schedule</h1>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 AM</td>
+              <td>Mat Pilates</td>
+              <td>Reformer Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Core & Balance</td>
+              <td>Mat Pilates</td>
+            </tr>
+            <tr>
+              <td>10:00 AM</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Reformer Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Core & Balance</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Reformer Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+            </tr>
+            <tr>
+              <td>2:00 PM</td>
+              <td>Mat Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+            </tr>
+            <tr>
+              <td>4:00 PM</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+              <td>Mat Pilates</td>
+              <td>Core & Balance</td>
+              <td>Reformer Pilates</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="booking-section">
+      <div class="booking-container">
+        <h2>Book a Class</h2>
+        <form id="booking-form">
+          <label for="name   ">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="class" :>Select a Class:</label>
+          <select id="class" name="class" required>
+            <option value="mat-pilates">Mat Pilates</option>
+            <option value="reformer-pilates">Reformer Pilates</option>
+            <option value="core-balance">Core & Balance</option>
+          </select>
+          <label for="date">Select a Date:</label>
+          <input type="date" id="date" name="date" required />
+          <label for="time">Select a Time:</label>
+          <input type="time" id="time" name="time" required />
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+          <button class="book-button" type="submit">Book Now!</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="logo">Stretch Society</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-facebook-circle-line"></i></a>
+          <a href="#"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="schedule.js"></script>
+  </body>
+</html>
