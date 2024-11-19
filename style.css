@@ -781,6 +781,10 @@ footer {
   cursor: pointer;
 }
 
+.nav-links.show {
+  display: flex;
+}
+
 /* Mobile devices (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .header-content {
