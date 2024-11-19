@@ -780,7 +780,7 @@ footer {
   color: #050259;
   cursor: pointer;
   position: absolute;
-  top: 60px;
+  top: 30px;
   right: 20px;
   z-index: 1000;
 }
