@@ -774,6 +774,13 @@ footer {
   background-color: #a0a4f2;
 }
 
+.hamburger-menu {
+  display: none;
+  font-size: 2em;
+  color: #050259;
+  cursor: pointer;
+}
+
 /* Mobile devices (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .header-content {
@@ -788,6 +795,9 @@ footer {
     align-items: center;
   }
 
+  .hamburger-menu {
+    display: block;
+  }
   .cta {
     padding: 10px 20px;
     font-size: 0.9em;
