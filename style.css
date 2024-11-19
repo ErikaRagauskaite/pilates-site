@@ -774,117 +774,19 @@ footer {
   background-color: #a0a4f2;
 }
 
-/* Responsive */
-
-/* Mobile devices (max-width: 600px) */
 @media screen and (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
+  .classes {
     padding: 20px;
+    margin: 20px 0;
   }
 
-  nav ul {
+  .class-cards {
     flex-direction: column;
     gap: 10px;
   }
 
-  .intro,
-  .why-us ul,
-  .classes {
-    padding: 20px;
-  }
-
-  .hero h1 {
-    font-size: 3em;
-    padding-top: 100px;
-  }
-
-  .hero p {
-    font-size: 1.5em;
-  }
-
   .class-card {
     max-width: 100%;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-content nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .membership-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .membership-card {
-    max-width: 100%;
-  }
-
-  .contact-container,
-  .membership-form-container,
-  .booking-container {
-    padding: 20px;
-  }
-}
-
-/* Tablets (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
-  .header-content {
-    padding: 20px;
-  }
-
-  nav ul {
-    gap: 20px;
-  }
-
-  .intro,
-  .why-us ul,
-  .classes {
-    padding: 50px 100px;
-  }
-
-  .hero h1 {
-    font-size: 5em;
-    padding-top: 150px;
-  }
-
-  .hero p {
-    font-size: 2em;
-  }
-
-  .class-card {
-    max-width: 100%;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-content nav ul {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .membership-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .membership-card {
-    max-width: 100%;
-  }
-
-  .contact-container,
-  .membership-form-container,
-  .booking-container {
-    padding: 30px;
+    margin: 10px 0;
   }
 }
