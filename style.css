@@ -798,7 +798,9 @@ footer {
     gap: 10px;
     align-items: center;
   }
-
+  .nav-links {
+    display: none;
+  }
   .hamburger-menu {
     display: block;
   }
