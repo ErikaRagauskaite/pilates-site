@@ -779,9 +779,6 @@ footer {
   font-size: 2em;
   color: #050259;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 
 .nav-links.show {
