@@ -9,13 +9,46 @@ body {
   background-color: #f2f2f2;
 }
 
+button a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #050259;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #050259;
+  font-family: "Bodoni Moda", serif;
+}
+
 .announcement-bar {
   background-color: #050259;
-  color: #fff;
+  color: #f2f2f2;
   text-align: center;
   padding: 5px 0;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: "Bodoni Moda", serif;
+}
+
+.announcement-bar p {
+  color: #f2f2f2;
 }
 
 .header-content {
@@ -56,18 +89,21 @@ nav ul li a:hover {
 .cta {
   background-color: #050259;
   color: #fff;
-  padding: 15px 25px; /* Increased padding */
+  padding: 15px 25px;
   border-radius: 20px;
   font-family: "Bodoni Moda", serif;
   font-size: 1em;
   border: none;
   cursor: pointer;
   margin-top: -10px;
+  text-decoration: none;
 }
 
 .cta:hover {
   background-color: #a0a4f2;
+  text-decoration: none;
 }
+
 .hero {
   position: relative;
   background-image: url("assets/pexels-john-tekeridis-21837-14843543.jpg");
@@ -97,29 +133,19 @@ nav ul li a:hover {
 .hero h1 {
   font-size: 7em;
   color: #a0a4f2;
-  text-align: center;
   padding-top: 200px;
-  font-family: "Satisfy", cursive;
 }
 
 .hero p {
-  font-size: 2em;
   color: #bbbdf2;
-  text-align: center;
-  font-family: "Bodoni Moda", serif;
   letter-spacing: 1px;
+  text-align: center;
+  font-size: 2.5em;
 }
 
 .intro {
   padding: 50px 350px 50px 150px;
   text-align: left;
-}
-
-.intro p {
-  font-size: 1.4em;
-  color: #050259;
-  font-family: "Bodoni Moda", serif;
-  padding-bottom: 40px;
 }
 
 .cta-secondary {
@@ -131,13 +157,11 @@ nav ul li a:hover {
   font-size: 1em;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.why-us h2 {
-  font-size: 3em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  text-align: center;
+.cta-secondary:hover {
+  background-color: #050259;
 }
 
 .why-us ul {
@@ -158,14 +182,6 @@ nav ul li a:hover {
   margin: 50px 0;
 }
 
-.classes h2 {
-  font-size: 3em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .class-cards {
   display: flex;
   flex-wrap: wrap;
@@ -176,7 +192,6 @@ nav ul li a:hover {
 .class-card {
   border-radius: 10px;
   padding: 20px;
-
   flex: 1;
   margin: 10px;
   max-width: 500px;
@@ -282,22 +297,6 @@ footer {
   text-align: center;
 }
 
-.classes-hero h1 {
-  font-size: 3em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  margin-bottom: 50px;
-}
-
-.classes-hero p {
-  font-size: 1.4em;
-  line-height: 1.6;
-  color: #050259;
-  font-family: "Bodoni Moda", serif;
-  padding-bottom: 40px;
-  margin: 0 auto;
-}
-
 .dropbtn {
   background-color: #050259;
   color: white;
@@ -376,6 +375,7 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-button:hover {
@@ -389,13 +389,6 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-}
-
-.schedule-container h1 {
-  font-size: 3em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  margin-bottom: 50px;
 }
 
 .schedule-table {
@@ -426,6 +419,59 @@ footer {
   background-color: #f1f1f1;
 }
 
+/* Responsive */
+
+/* Mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .schedule-container {
+    padding: 10px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 5px;
+    font-size: 0.9em;
+  }
+
+  .schedule-table th {
+    font-size: 1em;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .schedule-container {
+    padding: 15px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  .schedule-table th {
+    font-size: 1.1em;
+  }
+}
+
+/* Desktops and laptops (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+  .schedule-container {
+    padding: 20px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+
+  .schedule-table th {
+    font-size: 1.2em;
+  }
+}
+
 .book-button {
   background-color: #050259;
   color: #fff;
@@ -436,6 +482,7 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .book-button:hover {
@@ -455,8 +502,6 @@ footer {
 
 .booking-container h2 {
   font-size: 2em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
   margin-bottom: 50px;
 }
 
@@ -514,42 +559,23 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .booking-container button:hover {
   background-color: #a0a4f2;
 }
 
-//* Memberships */
+/* Memberships */
 
 .membership-hero {
   text-align: center;
   margin: 20px auto;
 }
 
-.membership-hero h1 {
-  font-size: 3em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  margin-bottom: 50px;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.membership-hero p {
-  font-size: 1.4em;
-  line-height: 1.6;
-  color: #050259;
-  font-family: "Bodoni Moda", serif;
-  padding-bottom: 40px;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
 .membership-container {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
   gap: 20px;
   padding: 20px;
@@ -572,16 +598,10 @@ footer {
 }
 
 .membership-card h2 {
-  font-family: "Satisfy", cursive;
-  font-size: 2em;
-  color: #050259;
   margin-bottom: 10px;
 }
 
 .membership-card p {
-  font-family: "Bodoni Moda", serif;
-  font-size: 1.5em;
-  color: #333;
   margin-bottom: 20px;
 }
 
@@ -612,34 +632,20 @@ footer {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+  text-decoration: none;
 }
 
 .cta-membership:hover {
   background-color: #a0a4f2;
 }
 
-/*membership form*/
+/* Membership form */
 
 .membership-form-container {
   padding: 40px;
   max-width: 800px;
   margin: 40px auto;
-
   text-align: center;
-}
-
-.membership-form-container h1 {
-  font-size: 2.5em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  margin-bottom: 50px;
-}
-
-.membership-form-container p {
-  font-family: "Bodoni Moda", serif;
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 50px;
 }
 
 .membership-form-container form {
@@ -697,33 +703,20 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-price:hover {
   background-color: #a0a4f2;
 }
 
-/*Contact*/
+/* Contact */
 
 .contact-container {
   padding: 40px;
   max-width: 800px;
   margin: 40px auto;
   text-align: center;
-}
-
-.contact-container h1 {
-  font-size: 2.5em;
-  color: #050259;
-  font-family: "Satisfy", cursive;
-  margin-bottom: 50px;
-}
-
-.contact-container p {
-  font-family: "Bodoni Moda", serif;
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 50px;
 }
 
 .contact-container form {
@@ -774,8 +767,178 @@ footer {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-contact:hover {
   background-color: #a0a4f2;
+}
+
+/* Responsive */
+
+/* Mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .intro,
+  .why-us ul,
+  .classes {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    padding-top: 100px;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+  }
+
+  .class-card {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .membership-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership-card {
+    max-width: 100%;
+  }
+
+  .contact-container,
+  .membership-form-container,
+  .booking-container {
+    padding: 20px;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .header-content {
+    padding: 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .intro,
+  .why-us ul,
+  .classes {
+    padding: 50px 100px;
+  }
+
+  .hero h1 {
+    font-size: 5em;
+    padding-top: 150px;
+  }
+
+  .hero p {
+    font-size: 2em;
+  }
+
+  .class-card {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .membership-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership-card {
+    max-width: 100%;
+  }
+
+  .contact-container,
+  .membership-form-container,
+  .booking-container {
+    padding: 30px;
+  }
+}
+
+/* Desktops and laptops (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+  .header-content {
+    padding: 30px 20px 0px 20px;
+  }
+
+  nav ul {
+    gap: 50px;
+  }
+
+  .intro,
+  .why-us ul,
+  .classes {
+    padding: 50px 350px 50px 150px;
+  }
+
+  .hero h1 {
+    font-size: 7em;
+    padding-top: 200px;
+  }
+
+  .hero p {
+    font-size: 2.5em;
+  }
+
+  .class-card {
+    max-width: 500px;
+  }
+  .footer-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-content nav ul {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .membership-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .membership-card {
+    max-width: 300px;
+  }
+
+  .contact-container,
+  .membership-form-container,
+  .booking-container {
+    padding: 40px;
+  }
 }
