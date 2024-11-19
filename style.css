@@ -775,6 +775,49 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .header-content {
+    padding: 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .cta {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+
+  .hero {
+    margin-top: -40px;
+  }
+
+  .hero h1 {
+    font-size: 4em;
+    padding-top: 100px;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+  }
+
+  .intro {
+    padding: 20px;
+  }
+
+  .cta-secondary {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+
+  .why-us ul {
+    padding: 50px 20px;
+  }
+
+  .why-us ul li {
+    font-size: 1.2em;
+  }
+
   .classes {
     padding: 20px;
     margin: 20px 0;
@@ -788,5 +831,79 @@ footer {
   .class-card {
     max-width: 100%;
     margin: 10px 0;
+  }
+
+  .class-card img {
+    border-radius: 10px;
+  }
+
+  .class-card h3 {
+    font-size: 1.5em;
+  }
+
+  .class-card p {
+    font-size: 1.2em;
+  }
+
+  .classes .cta-secondary {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-content nav ul {
+    gap: 20px;
+  }
+
+  .footer-content nav ul li {
+    font-size: 1.2em;
+  }
+
+  .footer-content i {
+    font-size: 1.2em;
+  }
+
+  .schedule-container {
+    padding: 10px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 5px;
+    font-size: 0.9em;
+  }
+
+  .schedule-table th {
+    font-size: 1em;
+  }
+
+  .book-button {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+
+  .booking-container {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .membership-container {
+    padding: 10px;
+  }
+
+  .membership-card {
+    padding: 10px;
+  }
+
+  .membership-form-container {
+    padding: 20px;
+  }
+
+  contact-container {
+    padding: 20px;
   }
 }
