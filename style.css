@@ -786,6 +786,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 /* Mobile devices (max-width: 600px) */
