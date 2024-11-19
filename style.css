@@ -779,6 +779,10 @@ footer {
   font-size: 2em;
   color: #050259;
   cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .nav-links.show {
@@ -787,6 +791,7 @@ footer {
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* Mobile devices (max-width: 600px) */
