@@ -774,27 +774,32 @@ footer {
   background-color: #a0a4f2;
 }
 
+/* Mobile devices (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .header-content {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
   }
 
   nav ul {
-    gap: 20px;
     flex-direction: column;
+    gap: 10px;
   }
 
   .cta {
     padding: 10px 20px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    margin-top: 10px;
   }
 
   .hero {
-    margin-top: -40px;
+    height: 70vh;
+    margin-top: -30px;
   }
 
   .hero h1 {
-    font-size: 4em;
+    font-size: 3em;
     padding-top: 100px;
   }
 
@@ -808,11 +813,11 @@ footer {
 
   .cta-secondary {
     padding: 10px 20px;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .why-us ul {
-    padding: 50px 20px;
+    padding: 20px;
   }
 
   .why-us ul li {
@@ -834,38 +839,14 @@ footer {
     margin: 10px 0;
   }
 
-  .class-card img {
-    border-radius: 10px;
-  }
-
-  .class-card h3 {
-    font-size: 1.5em;
-  }
-
-  .class-card p {
-    font-size: 1.2em;
-  }
-
-  .classes .cta-secondary {
-    padding: 10px 20px;
-    font-size: 0.8em;
-  }
-
   .footer-content {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
   }
 
   .footer-content nav ul {
-    gap: 20px;
-  }
-
-  .footer-content nav ul li {
-    font-size: 1.2em;
-  }
-
-  .footer-content i {
-    font-size: 1.2em;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .schedule-container {
@@ -882,29 +863,18 @@ footer {
     font-size: 1em;
   }
 
-  .book-button {
-    padding: 10px 20px;
-    font-size: 0.8em;
-  }
-
-  .booking-container {
-    padding: 10px;
-    margin-bottom: 50px;
-  }
-
   .membership-container {
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .membership-card {
-    padding: 10px;
+    max-width: 100%;
   }
 
-  .membership-form-container {
-    padding: 20px;
-  }
-
-  contact-container {
+  .membership-form-container,
+  .contact-container,
+  .booking-container {
     padding: 20px;
   }
 }
