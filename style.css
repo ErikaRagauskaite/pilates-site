@@ -781,6 +781,7 @@ footer {
 
   nav ul {
     gap: 20px;
+    flex-direction: column;
   }
 
   .cta {
